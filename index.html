@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Box Shadow Like Elementor Page Builder With Pure Vanilla Javascript.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="sidebar">
+        <hr>
+        <div class="box-color">
+            <label for="">Box Color</label>
+            <input type="color" name="box-color" class="color" value="#FFD700">
+        </div>
+        <div class="box-shadow">
+            <label for="">Box Shadow</label>
+            <input type="color" name="box-shadow" class="color" value="#000000">
+        </div>
+        <hr>
+        <p>Horizontal</p>
+        <div class="range-number">
+            <input type="range" name="x-position" value="0" min="-100" max="100" class="range">
+            <input type="number" name="x-position" value="0" class="number">
+        </div>
+        <p>Vertical</p>
+        <div class="range-number">
+            <input type="range" name="y-position" value="0" min="-100" max="100" class="range">
+            <input type="number" name="y-position" value="0" class="number">
+        </div>
+        <p>Blur</p>
+        <div class="range-number">
+            <input type="range" name="blur" value="38" min="-100" max="100" class="range">
+            <input type="number" name="blur" value="38" class="number">
+        </div>
+        <p>Spread</p>
+        <div class="range-number">
+            <input type="range" name="spread" value="0" min="-100" max="100" class="range">
+            <input type="number" name="spread" value="0" min="-100" max="100" class="number">
+        </div><br>
+        <div class="position">
+            <p>Position</p>
+            <select name="inset" class="select">
+                <option value="">Default</option>
+                <option value="inset">Inset</option>
+            </select>
+        </div>
+        <hr>
+    </div>
+    <div class="main">
+        <div class="box">
+        </div>
+    </div>
+</body>
+</html>
